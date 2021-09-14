@@ -1,0 +1,148 @@
+
+html {
+    box-sizing: border-box;
+}
+
+*,*::after,*::before {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: TT Lakes, sans-serif;
+    margin: 0;
+    background-color: #F8F8F8;
+}
+
+.brands__header {
+    height: 80px;
+    border-top: 1px solid #D9FFF5;
+    background: linear-gradient(
+            270deg
+            , #FFFFFF 0%, #F8F8F8 98.61%);
+}
+
+.brands__title {
+    font-family: TT Lakes, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #7E7E82;
+    text-transform: uppercase;
+    letter-spacing: -0.2px;
+    margin: 16px;
+}
+
+.swiper-container {
+    height: 154px;
+    padding-top: 5px;
+    overflow: hidden;
+}
+
+.swiper-wrapper {
+    display: flex;
+    margin-left: 16px;
+    margin-top: 16px;
+}
+
+.brands__swiper-button {
+    border: none;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+}
+
+.swiper-slide {
+    max-width: 240px;
+    height: 72px;
+    margin-right: 16px;
+    background-color: white;
+    min-width: 0;
+}
+
+.swiper-image {
+    box-sizing: border-box;
+    display: flex;
+    width: 240px;
+    height: 72px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 16px 20px 16px;
+    border: 1px solid #EAEAEA;
+    border-radius: 6px;
+    margin-right: 16px;
+}
+
+.swiper-pagination {
+    margin-top: 12px;
+}
+
+.swiper-pagination-bullet:active {
+    background-color: #B5B6BC;
+}
+
+.swiper-pagination-bullet {
+    background: #DDDDDD;
+}
+
+@media (min-width: 768px) {
+    .swiper-pagination {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .read__more {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .brands__wrapper {
+        height: 322px;
+        max-height: 470px;
+    }
+    .brands__header {
+        height: 56px;
+    }
+    .swiper-wrapper {
+        flex-wrap: wrap;
+        margin-left: 24px;
+    }
+    .swiper-container {
+        height: 190px;
+        max-height: 190px;
+    }
+    .swiper-container--hidden {
+        height: 280px;
+        max-height: 470px;
+    }
+    .swiper-slide {
+        margin-right: 24px;
+        margin-bottom: 15px;
+    }
+    .read__more {
+        font-family: TT Lakes, sans-serif;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 500;
+        color: #1B1C21;
+        border: none;
+        background-color: transparent;
+        margin-left: 27px;
+        position: relative;
+        cursor: pointer;
+    }
+    .read__more::before {
+        content: "";
+        display: block;
+        background-image: url("src/arrow.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 30px;
+        height: 24px;
+        float: left;
+    }
+    .read__more--rotate::before {
+        transform: rotate(180deg);
+    }
+}
