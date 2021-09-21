@@ -146,3 +146,10 @@ body {
         transform: rotate(180deg);
     }
 }
+
+@media (min-width: 1120px) {
+    .swiper-container--hidden {
+        height: 280px;
+        max-height: 470px;
+    }
+}
